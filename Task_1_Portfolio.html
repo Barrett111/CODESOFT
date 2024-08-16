@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            header{
+               
+                display:inline;
+                
+            }
+            header h1{
+                position:relative;
+                text-align: center;
+                font-family:arial Verdana, Geneva, Tahoma, sans-serif;
+                color:white;
+                
+                
+                
+            }
+            header h1:hover{
+                color:#f5b301;
+
+            }
+             
+
+            header img{
+
+                display:inline;
+                float:left;
+                height:90px;
+                width:90px;
+                border-radius:50%;
+                position:relative;
+                box-shadow: 0px 0px 5px 5px #f5b301;
+            }
+
+            body{
+               
+               background-image:linear-gradient(rgb(28, 25, 9),gold);  
+            }
+             
+
+           .About nav li{
+                        display:inline;      
+           }
+
+         nav a{
+            padding:7px;
+            font-size: 15px;
+            text-decoration: none;
+            color:gold;
+           }
+         .About{
+            display: grid;
+            
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 5px;
+            background-color:rgb(0, 7, 7);
+            margin-top: 80px;
+            margin-bottom: 50px;
+            width:80%;
+            height:100%;
+            margin-left: 150px;
+            border-radius:10%;
+            box-shadow:0 0 15px rgb(215, 215, 8);
+        
+        }
+      
+        .image >img {
+        max-width: 500px;
+        max-height:500px;
+        border-radius:50%;
+        margin:10px;
+        }
+        .text{
+            color:white;
+            display:flexbox;
+            position:absolute;
+            left:40%;
+            margin:150px;
+
+
+        }
+
+        .text > h1 {
+        font-size: 20px;
+        font-family:cursive;
+        color:rgb(227, 218, 170);
+        display:inline;
+        
+        
+        
+        
+        }
+
+        .text > h1 > span{
+            color:gold;
+            font-size:30px;
+            margin-top:50px;
+        }
+        .text > p{
+            font-size:15px;
+            color:white;
+            font-family: cursive;
+        
+            
+            
+            
+        }
+        .text > p:hover{
+            color:#f5b301;
+        }
+
+
+        nav a:hover{
+        
+        font-size: 20px;
+        text-decoration:underline;
+        transition: 0.5s;
+        }
+
+        .text > a{
+            padding:7px;
+            background-color: #f5b301;
+            text-decoration: none;
+            top:10px;
+            color:black;
+            border-radius: 5px;
+        }
+        .text > a:hover{
+        
+        background-image: linear-gradient(to right,white,gold);
+        transition: 1s;
+        }
+
+        img:hover{
+            opacity:80%;
+        }
+
+
+        .contact{
+            display: grid;
+                
+                grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows:1fr 1fr;
+                row-gap:30px;
+                width:80%;
+                height:100%;
+                margin-left: 150px;
+                border-radius:10%;
+                box-shadow:0 0 15px rgb(215, 215, 8);
+                background-color:rgb(0, 7, 7);
+        }
+        
+        
+            .contact > h1{
+
+                grid-row-start: 1;
+                grid-row-end: 1;
+                grid-column-start: 3;
+                grid-column-end: 4;
+                
+
+            }
+
+            
+        .contact > a{
+        
+        grid-row-start: 2;
+        grid-row-end: 2;
+        align-items: center;
+        justify-content: center;
+        margin-left:90px;
+        
+
+        }
+
+
+
+
+        .skills{
+            height:100%;
+            width:80%;
+            margin-left: 150px; 
+            border-radius:10%;
+            background-color:rgb(0, 7, 7);
+            box-shadow:0 0 20px rgb(215, 215, 8);
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap:0px;
+            row-gap: 10px;
+        place-items: center;
+        
+            
+
+        }
+
+        .skills > div{
+            color:white;
+            
+        }
+        .skills > div >img{
+            height:50%;
+            width:30%;
+            margin-top: 30px;
+            margin-left:35%; 
+        }
+
+        .skills > div >p{
+            margin-left: 20%;
+            margin-right: 15%;
+        }
+
+        .skills > div > p > span {
+            color:#f5b301;
+            font-family:cursive;
+            
+        }
+
+        .skills,.section1 > p:hover{
+            color:#ebd64b;
+            
+        }
+
+        .skills,.section2 > p:hover{
+            color:#ebd64b;
+        }
+
+        .skills,.section3 > p:hover{
+            color:#ebd64b;
+            
+        }
+
+        .project{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            background-color:rgb(0, 7, 7);
+            width:80%;
+            height:100%;
+            margin-left: 150px;
+            border-radius: 10%;
+            box-shadow:0 0 25px rgb(244, 244, 241);
+        }
+        .project > div >img{
+            height:300px;
+            width:500px;
+            margin-bottom:20px;
+            margin-left:10%; 
+            border-radius: 10%;
+            opacity: 90%;
+            
+        
+        }
+
+        .project>.p0{
+            grid-column:1 / span 2;
+            grid-row:1;
+            text-align:center;
+            
+            
+        }
+
+        .project>.p2{
+            grid-column:1 / span 2;
+            grid-row:2;
+            margin-left: 270px;
+            margin-top: -150px;
+
+        }
+
+        .project > .p3{
+            margin-top: -100px;
+        }
+        .project > .p4{
+            margin-top: -10px;
+        }
+
+        footer p{
+            
+            color:white;
+            text-align:center;
+        }
+
+
+
+        </style>
+    </head>
+
+
+    <body>
+        <header>
+
+            <img src="portfo.png"/>
+            <h1>Welcome to my Portfolio..!!</h1>
+            
+        </header>
+       
+           
+       
+
+            <div class="About">
+                
+                <div class="image"> <img src="myprofile.png"/></div>
+                <div class="text"><h1>Hello its me,<br> <span>Rushikesh Ranaware</span></h1>
+                    <p>Iam a Web Developer and Web Designer, Currently persuing <br>my undergrad in Information Technology..!!</p>
+
+                    <a href="MY_RESUME.pdf" download id ="res">Download Resume</a>
+                   </div>
+                
+                   
+                    <nav>
+                        <ul>
+                            <li><a href="#abt">About</a></li>
+                            <li><a href="#sk">Skills</a></li>
+                            <li><a href="#pro">Projects</a></li>
+                            <li><a href="#res">Resume</a></li>
+                            <li><a href="#cont">Contact</a></li>  
+        
+                        </ul>
+                    </nav>
+
+                    
+                </div>
+
+            </div>
+<br>
+
+<h1 style="text-align: center;color;font-family: cursive;color:white;font-size:50px;" id="sk">Skills..!!!</h1>
+
+<br>
+            <div class="skills">
+                
+               
+            <div class="section1">
+                <img src="web.jpg"/>
+                <p><span>Web-Development</span>Proficient in web development with expertise in HTML/CSS for creating responsive and visually appealing web pages.
+                    Skilled in PHP for server-side scripting and MySQL for efficient database management. Experienced with various databases,
+                     both SQL and NoSQL, to support diverse web applications.</p>
+            </div>
+               
+            <div class="section2">
+                <img src="DSA.jpg"/>
+                <p><span>DSA:</span>Proficient in core data structures like arrays, linked lists, stacks, queues, trees, and graphs. 
+                    Skilled in algorithmic techniques such as sorting, searching, dynamic programming, and graph traversal. 
+                    Experienced in competitive programming and software development, using C++ to implement efficient and optimized solutions.
+                     Active on platforms like LeetCode and HackerRank for continuous learning and practice.</p>
+            </div>
+
+            <div class="section3">
+                 <img src="communication.jpg"/>
+                 <p><span>Communication:</span> Strong verbal and written communication skills, adept at conveying complex technical concepts to diverse audiences.
+                     Experienced in collaborating with cross-functional teams and presenting ideas clearly and effectively.
+                    skilled in active listening and providing constructive feedback to foster a productive work environment. 
+                    Proficient in creating technical documentation and reports.</p>
+
+            </div>
+
+            <div class="section3">
+                 <img src="sql.jpg"/>
+                 <p><span>SQL:</span> Proficient in designing, querying, and managing relational databases using SQL. 
+                    Experienced in writing complex queries, optimizing performance, and ensuring data integrity.
+                     Skilled in using SQL for data manipulation, aggregation, and reporting. Familiar with database
+                     management systems like MySQL, PostgreSQL, and SQLite.</p>
+            </div>
+
+            </div>
+
+
+<br>
+<br>
+
+<div class="project" >
+
+    <div class="p0">
+<h1 style="color:white;font-family: cursive;" id="pro">MY PROJECT</h1>
+<p style="color:gold; font-size: 25px;">The College event manager With the online voting system</p>
+    </div>
+
+    <div class="p2">
+        <img src="v2.png"/>
+        <p></p>
+
+        
+    </div>
+
+
+    <div class="p3">
+        <img src="v3.png"/>
+        <p></p>
+
+        
+    </div>
+
+    <div class="p4">
+        <img src="v1.png"/>
+
+        
+    </div>
+
+    <div class="p5">
+
+    </div>
+</div>
+
+<br>
+<br>
+
+
+                <div class="contact" >
+                   <h1 style="text-align: center;font-family:cursive;color:gold" id="cont">Iam Here..!!</h1>
+                
+               
+                  <a href="Facebook.com"> <i class="fa fa-twitter" style="font-size:48px;color:rgb(7, 132, 241)"></i></a>
+                  <a href=""><i class="fa fa-github" style="font-size:48px;color:white"></i></a>
+                  <a href="https://www.instagram.com/r.rushikesh_/"><i class="fa fa-instagram" style="font-size:48px;color:red"></i></a> 
+                  <a href=""><i class="fa fa-facebook-official" style="font-size:48px;color:rgb(15, 15, 226)"></i></a>
+                  <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="fa fa-linkedin" style="font-size:48px;color:rgb(75, 75, 179)"></i></a> 
+                    
+                </div>
+
+                
+            
+        <footer>
+            <p>@copyright
+            
+            </p>
+        </footer>
+    </body>
+</html>

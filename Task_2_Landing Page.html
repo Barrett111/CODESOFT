@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Landing page
+    </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        header{
+            display:flex;
+            background-color:#f8f5b8;
+            height:100px;
+            position:fixed;
+            margin:0px;
+            width:100%;
+            align-items: center;
+           
+        }
+        header > a{
+            margin:130px;
+            font-size:20px;         
+            color:rgb(36, 174, 174);
+            top:-20px;
+            text-decoration: none;
+            
+        }
+
+        header > a:hover{
+            text-decoration:underline;
+            color:black;
+        }
+        header > h1{
+            color:rgb(11, 39, 39);
+            height:40px;
+            width:120px;
+            text-align: center;
+            font-size: 40px;
+            border:solid black 2px;
+            
+            
+        }
+        header > div{
+            border:solid black 2px;
+            border-radius: 30%;
+            box-shadow: 0 0 10px 0;
+        }
+        header > p{
+            font-size: 40px;
+            color:antiquewhite;
+            width:150px;
+            background-color: #f8f5b8;
+        }
+        .container{
+            
+
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:1fr 1fr 1fr;
+            background-color:#bb9c36;
+            height:700px;
+            width: 100%;
+          }
+        .cont1{
+            margin-top:13%;
+            background-color:#f8f5b8;
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:1;
+            grid-column-end: 1;
+            height:400px;
+            width:250;
+        }
+        .cont1 > h1{
+            font-size: 50px;           
+            margin: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .cont1 > p{
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .container >.cont1 > a{
+            color:white; 
+            position:relative;        
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:200px;         
+            left:150px;
+            top:100px;
+            padding:10px;
+            text-decoration: none;
+            background-image:linear-gradient(rgb(154, 180, 173),rgb(0, 80, 83));
+        }
+        .cont2{
+            margin-top: 13%;
+        }
+        .cont2 > img{
+            height: 800px;
+            width:700px;
+            margin:0;
+            
+        }
+        .container2{
+           
+            display:grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-rows:1fr;
+            height:500px;
+            width:100%;
+            gap:5px;
+      background:linear-gradient(to bottom right,#bb9c3e,#d4c4bc);
+        }
+
+        .cont21{
+            grid-column-start: 1;
+            grid-column-end:1;
+           background-color: rgb(62, 32, 32);
+           height:300px;
+           width:300px;
+            position:relative;
+            left:150px;
+            padding:5%;
+            align-items: center;
+            border-radius: 10%;
+
+            
+        
+        }
+
+        .cont21 > img{
+            height:210px;
+            width:100%;
+            border:solid gray 4px;
+        
+        }
+
+        .cont22 > img{
+            height:210px;
+            width:100%;
+            border:solid gray 4px;
+            
+           
+        }
+        .cont23 > img{
+            height:210px;
+            width:100%;
+            border:solid gray 4px;
+           
+        }
+        
+        .cont21:hover{
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+
+        .cont22:hover{
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+        .cont23:hover{
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+
+        .cont22{
+            grid-column-start: 2;
+            grid-column-end:2;
+            background-color: rgb(222, 223, 224);
+            height:300px;
+            width:300px;
+            position:relative;
+            left:150px;
+            padding:5%;
+            border-radius: 10%;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .cont23{
+            grid-column-start: 3;
+            grid-column-end:3;
+            background-color: white;
+            height:300px;
+            width:300px;
+            position:relative;
+            left:150px;
+            padding:5%;
+            border-radius:10%;
+        }
+
+        .container2 > div > h2{
+            color:#bb9c36;            ;
+            text-align: center;
+            margin-top:15%;
+            
+        }
+
+        .newcol{
+            display: flex;
+           
+            height:400px;
+            
+        }
+
+        .newcol1{
+            display: block;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            color: blue;
+            
+        }
+
+        .newcol1 > h1{
+            margin:50px;
+            font-size: 70px;
+            color:#794328;
+
+        }
+        .newcol1 > p{
+            margin-left: 50px;
+            font-size: 20px;
+            color:#ae8470;
+        }
+        .newcol2{
+            background-color: black;
+            width:100rem;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .newcol2 > img{
+            height:400px;
+            width:400px;
+            margin-left:200px;
+        }
+
+        .product{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-left:10%;
+            margin-top: 20px;
+            gap:20px;
+
+        }
+
+        .product > div > img {
+            height: 217px;
+            width:270px;
+            border-radius: 10%;
+        }
+        .product > div{
+            height: 280px;
+            width:270px;
+            border:solid gold 2px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px 0;
+            border-radius:7%;
+        }
+        .product > div :hover{
+            opacity: 0.5;
+        }
+
+        #data{
+            text-align: center;
+            background-color: gold;
+            border-radius: 10px;
+        }
+
+        .checked{
+            color:red
+        }
+        footer{
+            background-color: gray;
+            height:300px;
+            width:100%;
+            margin-top: 20px;
+            display:flex;
+            gap:40px;
+            justify-content: center;
+           
+        }
+        footer > div{
+            margin:5%;
+            font-size: 20px;
+            color:white;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="h1"> <h1>Funeria™</h1></div>
+       
+        <a href="">HOME</a>
+        <a href="">SHOP</a>
+        <a href="">CART</a>
+        <a href="">SALE</a>
+
+        <input type="text" placeholder="Search🔍"style="border-color:aqua;width:100px;height:20px;
+        font-size: 20px;border-radius: 20px;">
+    </header>
+
+
+    <div class="container">
+        <div class="cont1">
+            <h1>Interior Design & Furniture</h1>
+           <p>Discover the perfect blend of style and comfort with our exquisite collection of furniture. At Funeria, we are dedicated to transforming your living spaces into beautiful, functional, and inviting areas that you'll love to come home to.</p>
+            <a href="">EXPLORE</a>
+       </div>
+
+        <div class="cont2">
+            <img src="furni.png" alt="Image"/>
+        </div>
+
+    </div>
+
+   
+
+    <div class="container2">
+
+        <div class="cont21">
+          
+            <img src="interior.png" alt="img"/>
+            <h2>INTERIOR</h2>
+        </div>
+
+        <div class="cont22">
+            
+            <img src="furni2.png"/>
+            <h2>FURNITURE</h2>
+
+
+        </div>
+
+        <div class="cont23">
+         
+            <img src="accesories.png"/>
+            <h2>ACCESORIES</h2>
+
+
+        </div>
+    </div>
+
+
+    <div class="newcol">
+
+        <div class="newcol1">
+            <h1>New <br>Collections</h1>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit.
+                 Nesciunt blanditiis debitis aliquam ea sapiente. 
+                 Dignissimos accusantium sequi porro recusandae. 
+                 Quo error culpa sequi mollitia aliquam animi quae ex? Eaque, nulla!</p>
+        </div>
+        <div class="newcol2">
+
+            <img src="interior.png"/>
+        </div>
+
+    </div>
+
+    <div class="product">
+
+        <div class="p1">
+            <img src="sofa.jpg"/>
+            <div id="data"><h3>Sofa</h3><h4>$540</h4>
+                <p><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span></p></div>
+            
+        </div>
+
+        <div class="p1">
+            <img src="chair.jpg"/>
+            <div id="data"><h3>Chair</h3><h4>$300</h4>
+                <p><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span></p></div>
+            
+            
+        </div>
+
+        <div class="p1">
+            <img src="dinning.jpg"/>
+            <div id="data"><h3>Dinning Table</h3><h4>$170</h4>
+                <p><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span></p></div>
+            
+        </div>
+
+        <div class="p1">
+            <img src="table.jpg"/>
+            <div id="data"><h3>Office-table</h3><h4>$270</h4>
+                <p><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span></p></div>
+            
+        </div>
+
+        <div class="p1">
+            <img src="kitchen.jpg"/>
+            <div id="data"><h3>Kitchen</h3><h4>$300</h4>
+                <p><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span></p></div>
+            
+        </div>
+
+        <div class="p1">
+            <img src="bed.jpg"/>
+            <div id="data"><h3>Royal Bed</h3><h4>$400</h4>
+                <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span></p></div>
+            
+        </div>
+    </div>
+
+
+<footer>
+
+<div class="section">
+    <p><b>Visit Our Showroom:</b><br><br>
+
+        <b><i>Funeria™ Furniture Showroom</i></b><br>
+        1234 Elm Street<br>
+        Baramati, PIN:413133<br>
+        India</p>
+
+</div>
+<div class="section">
+    <p><b>Store Hours:></b><br><br>
+
+        Monday - Friday: 9:00 AM - 8:00 PM<br>
+        Saturday: 10:00 AM - 6:00 PM<br>
+        Sunday: 12:00 PM - 5:00 PM</p>
+    
+</div>
+<div class="section">
+    <p><b>Customer Service:</b><br><br>
+
+        Phone: +91 (555) 123-4567<br>
+        Email: support@funeria.com</p>
+</div>
+</footer>
+    
+</body>
+</html>

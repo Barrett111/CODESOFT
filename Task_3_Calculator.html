@@ -1,0 +1,97 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <style>
+              *{
+                margin:0;
+                padding:0;
+                background-color: aliceblue;
+                }
+               .cont{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 100px;
+                }
+                .calculator{
+                    height: 600px;
+                    width:400px;
+                    display:grid;
+                    grid-template-columns:1fr 1fr 1fr 1fr ;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                    gap:5px;
+                    border:5px solid rgb(0, 0, 0);    
+                    background-color:black;   
+                    box-shadow: 0 0 30px 0;  
+                    border-radius:2%;  
+
+                }
+
+                #but
+                {
+                    border-radius: 10%;
+                    font-size: 30px;
+                    font-weight: 100;
+                    margin: 5px;
+                    color:rgb(0, 0, 0);
+                    
+                }
+
+                #but:hover{
+                transform:scale(1.2);    
+                }
+
+                #dis{
+                    grid-column: 1 / span 4;
+                    grid-row:1;
+                    text-align:right;
+                    font-size: 50px;
+                    border:3px solid gray;
+                    border-radius: 10%;
+                    margin: 5px;
+                    background-color: rgb(255, 255, 255);
+                }   
+                
+
+        </style>
+    </head>
+
+
+    <body>
+          <div class="cont">
+                    <div class="calculator">
+
+
+                        <input type="text" value="" id="dis" placeholder="Calculator      " >
+                        <input type="button" value="C" id="but" onclick="dis.value=' ' " style="background-color: red;">
+
+                        <input type="button" value="%" id="but" onclick="dis.value+='%'" >
+                        <input type="button" value="ON" id="but" onclick="dis.value=''" >                       
+                        <input type="button" value="+" id="but" onclick="dis.value+='+'">
+                        <input type="button" value="7" id="but" onclick="dis.value+='7'">
+                        <input type="button" value="8" id="but" onclick="dis.value+='8'">
+                        <input type="button" value="9" id="but" onclick="dis.value+='9'">
+                        <input type="button" value="-" id="but" onclick="dis.value+='-'">
+                        <input type="button" value="4" id="but" onclick="dis.value+='4'">
+                        <input type="button" value="5" id="but" onclick="dis.value+='5'">
+                        <input type="button" value="6" id="but" onclick="dis.value+='6'">
+                        <input type="button" value="/" id="but" onclick="dis.value+='/'">
+                        <input type="button" value="1" id="but" onclick="dis.value+='1'">
+                        <input type="button" value="2" id="but" onclick="dis.value+='2'">
+                        <input type="button" value="3" id="but" onclick="dis.value+='3'">
+                        <input type="button" value="*" id="but" onclick="dis.value+='*'">
+                        <input type="button" value="00" id="but" onclick="dis.value+='00'">
+                        <input type="button" value="0" id="but" onclick="dis.value+='0'">
+                        <input type="button" value="." id="but" onclick="dis.value+='.'">
+                        <input type="button" value="=" id="but" onclick="dis.value=eval(dis.value)" style="background-color:rgb(206, 167, 117);">               
+                     </div>
+                   
+            </div>      
+<script type="javascript" src="cal.js"></script>
+
+    </body>
+
+</html>
